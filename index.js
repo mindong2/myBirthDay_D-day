@@ -17,7 +17,7 @@ const displayMin = Math.floor(dDayMin%60);
 const displayHours = Math.floor(dDayHours%24);
 const displayDate = Math.floor(dDayDate);
 
-clock.innerText = `${displayDate}d:${displayHours}h:${displayMin}m:${displaySec}s`
+clock.innerText = `${displayDate < 10 ? `0${displayDate}` : displayDate}d:${displayHours < 10 ? `0${displayHours}` : displayHours}h:${displayMin < 10 ? `0${displayMin}` : displayMin}m:${displaySec < 10 ? `0${displaySec}` : displaySec}s`
 }
 
 
