@@ -4,7 +4,7 @@ clock = container.querySelector(`.js-clock`);
 
 function dDayClock(){
 const date = new Date();
-const myBirth = new Date("2021,04,23");
+const myBirth = new Date("2022,04,23");
 const dDay = new Date (myBirth - date);
 
 const dDaySec = Math.floor(dDay/1000);
